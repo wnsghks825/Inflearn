@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class InputManager
 {
@@ -12,6 +13,10 @@ public class InputManager
 
     public void OnUpdate()
     {
+        //현재 UI가 클릭되었는지
+        if (EventSystem.current.IsPointerOverGameObject())
+            return;
+
         if (Input.anyKey && KeyAction != null)
             KeyAction.Invoke();
 
