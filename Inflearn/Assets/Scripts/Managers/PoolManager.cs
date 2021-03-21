@@ -63,8 +63,7 @@ public class PoolManager
         }
     }
 	#endregion
-    //여러 개의 Pool들을 가짐,각 Pool들은 이름을 이용하여 관리
-    //각 Dictionary들은 Pool 클래스를 가진다.
+
 	Dictionary<string, Pool> _pool = new Dictionary<string, Pool>();
     Transform _root;
 

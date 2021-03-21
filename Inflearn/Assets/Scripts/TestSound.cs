@@ -21,6 +21,6 @@ public class TestSound : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-        Managers.Sound.Play(audioClip , Define.Sound.BGM);
+        Managers.Sound.Play(audioClip , Define.Sound.Bgm);
     }
 }

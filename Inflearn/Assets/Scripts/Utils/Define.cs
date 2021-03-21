@@ -4,28 +4,39 @@ using UnityEngine;
 
 public class Define
 {
- 
+    public enum Layer
+    {
+        Monster = 8,
+        Ground = 9,
+        Block = 10,
+    }
+
     public enum Scene
     {
         Unknown,
         Login,
         Lobby,
-        Game
+        Game,
     }
+
     public enum Sound
     {
-        BGM,
+        Bgm,
         Effect,
-        MaxCount
+        MaxCount,
     }
+
     public enum UIEvent
     {
         Click,
-        Drag
+        Drag,
     }
+
     public enum MouseEvent
     {
         Press,
+        PointerDown,
+        PointerUp,
         Click,
     }
 
